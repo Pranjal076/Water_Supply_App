@@ -1,0 +1,16 @@
+{
+  "name": "Android Development",
+  "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "11"
+    },
+    "ghcr.io/devcontainers/features/android:0": {
+      "ndk": true
+    }
+  },
+  "extensions": [
+    "ms-vscode.vscode-android"
+  ],
+  "postCreateCommand": "sdkmanager 'platforms;android-30' 'build-tools;30.0.3'"
+}
